@@ -1,0 +1,141 @@
+#main {
+  background-color: white;
+}
+
+header {
+  background-color: #d3d3d3;
+  position: relative;
+  z-index: 10;
+  display: flex;
+  height: 10vh; /* Use vh for a responsive height */
+  width: 90%;
+  margin: 1% 4% auto 5%;
+  border-radius: 50px;
+}
+
+#navlabel {
+  width: 70%;
+  z-index: 10;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  border-radius: 40%;
+}
+
+#navlabel img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+nav {
+  width: 1000%;
+  height: 60%;
+  padding: 10px;
+  margin: 1%;
+  box-sizing: border-box;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#slideshow {
+  display: flex;
+  width: 99%;
+  height: calc(100vh - 16vh);
+  margin-top: 1%;
+  overflow: hidden;
+  z-index: 1;
+  flex-direction: row-reverse;
+  position: relative;
+}
+
+#slideshow-image {
+  flex: 2;
+  clip-path: polygon(40% 0, 100% 0, 100% 100%, 0 100%);
+  background-color: aqua;
+  overflow: hidden;
+  z-index: 1;
+}
+
+#slideshow-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#intro-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+#intro-para {
+  position: absolute;
+  flex: 1;
+  width: 30%;
+  font-size: 1.5em;
+  color: #383e43;
+  display: flex;
+  align-items: left;
+  margin: 17% 0 0 5%;
+  justify-content: center;
+}
+#intro-heading {
+  position: absolute;
+  margin-left: 4%;
+  z-index: 2;
+  width: 85%; /* Increase width without affecting other layout */
+  padding: 10px 20px; /* Add padding for text clarity */
+}
+
+#intro-heading h1 {
+  font-size: 70px;
+  color: #f7ef99;
+  margin: 0;
+  padding: 0;
+  white-space: nowrap; /* Ensure text stays on a single line */
+}
+.more-highlight {
+  color: #dba84c;
+}
+#testimonial {
+  margin-left: 5%;
+  font-size: 30px;
+}
+#testimonials-container {
+  display: flex;
+  margin-left: 2%;
+  width: 90%;
+  height: 50%;
+}
+#testimonial-1,
+#testimonial-2,
+#testimonial-3,
+#testimonial-4 {
+    border-left: 4px solid #f7ef99; 
+    background: linear-gradient(to right, rgba(247, 239, 153, 0.2), rgba(56, 62, 67, 0.2));
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    display: flex;
+    width: 20%;
+    height: 20%;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 2em;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 20px;
+}
+#testimonial-1 p,
+#testimonial-2 p,
+#testimonial-3 p,
+#testimonial-4 p{
+font-size: 10px;
+}
