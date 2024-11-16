@@ -1,0 +1,243 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+header {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  height: 13vh;
+  width: 90%;
+  margin: 1% 4% auto 5%;
+}
+
+#navlabel {
+  width: 80%;
+  z-index: 10;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  border-radius: 40%;
+}
+
+#navlabel img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+nav {
+  background-color: #d3d3d3;
+  border-radius: 50px;
+  width: 1000%;
+  height: 60%;
+  padding: 10px;
+  margin: 1%;
+  box-sizing: border-box;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  margin: 1% 0;
+  padding: 0;
+}
+
+.main-topic {
+  font-size: 70px;
+  color: #f7ef99;
+  margin: 1% 5%;
+  padding: 0;
+  white-space: nowrap;
+}
+
+.main-topic span {
+  color: #dba84c;
+}
+
+.main-fieldset {
+  display: flex;
+  flex-direction: row; /* Ensure children are aligned in a row */
+  width: 90%;
+  height: 65vh;
+  margin: 20px auto;
+  padding: 20px;
+  border: 2px solid #dba84c;
+  border-radius: 10px;
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  overflow-y: hidden;
+}
+.image-container {
+  border-radius: 10px;
+  flex: 1;
+  min-width: 40%;
+  min-height: 20%;
+  background-color: aqua;
+  overflow: hidden;
+  z-index: 1;
+  margin-bottom: 1%;
+  margin-top: 1%;
+}
+
+#contact-us-description {
+  flex: 1.5;
+  padding-left: 60px;
+  width: 50%;
+  margin-left: 2%;
+  margin-top: 1%;
+}
+#contact-us-description p {
+  margin-left: 4%;
+  line-height: 1.6;
+  font-size: 1.7rem;
+  color: #dba84c;
+}
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#contact-us {
+  display: flex;
+  justify-content: space-evenly; /* Spread items evenly */
+  align-items: flex-start; /* Align items at the top */
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  width: 90%;
+  margin: 3% auto; /* Center and add vertical space */
+  gap: 20px; /* Add spacing between items */
+}
+
+.contact-item {
+  background-color: #f5f5f5; /* Light background for contrast */
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  height: 20vh;
+  flex: 1 1 30%; /* Allow flexibility and set base width */
+  max-width: 300px; /* Limit the maximum width */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Hover effects */
+}
+
+.contact-item h2 {
+  font-size: 1.5rem;
+  color: #383e43; /* Dark text color */
+  margin-bottom: 10px;
+}
+
+.contact-item p {
+  font-size: 1rem;
+  color: #555; /* Softer text color */
+  margin: 5px 0;
+}
+
+.contact-item a {
+  color: #c8a165; /* Gold for links */
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.contact-item a:hover {
+  color: #f5c97c; /* Bright gold hover */
+}
+
+.contact-item:hover {
+  transform: translateY(-5px); /* Lift on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+@media (max-width: 768px) {
+  #contact-us {
+    flex-direction: column; /* Stack items vertically on small screens */
+    align-items: center;
+  }
+
+  .contact-item {
+    width: 90%; /* Full width for small screens */
+  }
+}
+
+#footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  background-color: #383e43; /* Dark gray */
+  color: #e4e8ec; /* Soft light gray */
+  padding: 30px 20px;
+  font-family: "Arial", sans-serif;
+  width: 100vw; /* Use full viewport width */
+  margin-top: 5%; /* Remove any margin for alignment */
+  box-sizing: border-box; /* Ensure padding doesn't add to width */
+}
+
+.footer-container {
+  flex: 1 1 22%;
+  text-align: left;
+}
+
+.footer-container h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: #c8a165; /* Muted gold */
+}
+
+.footer-container ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-container ul li {
+  margin: 5px 0;
+  font-size: 1em;
+}
+
+.footer-container ul li a {
+  color: #e4e8ec; /* Soft light gray */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-container ul li a:hover {
+  color: #f5c97c; /* Bright gold hover */
+}
+
+.footer-container p {
+  font-size: 1em;
+  margin: 0;
+}
+
+#footer p a {
+  color: #e4e8ec; /* Match primary text */
+  text-decoration: none;
+}
+
+#footer p a:hover {
+  color: #f5c97c; /* Bright gold hover */
+}
+
+@media (max-width: 768px) {
+  #footer {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-container {
+    flex: 1 1 100%;
+    text-align: center;
+  }
+}
