@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="../css/quotation.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <div id="navlabel">
+        <img src="../assests/label.jpg" alt="label" />
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div id="description">
+      <h1 class="heading-h1">
+        Get a <br />
+        <span class="more-highlight">Quotation</span>
+      </h1>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor
+        neque vel nunc consectetur, id ultricies lectus faucibus. Vestibulum
+        ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
+        curae; Donec dignissim, ligula id consectetur dictum, orci velit
+        consectetur felis, ac ultricies neque velit a neque. Nulla facilisi.
+      </p>
+    </div>
+    <div id="form-container">
+      <fieldset >
+        <legend>Quotation Form</legend>
+        <form id="quotation-form">
+          <div id="basic-information">
+            <div class="input-group">
+              <label for="name">Name:</label>
+              <input type="text" id="name" required />
+            </div>
+            <div class="input-group">
+              <label for="email">Email:</label>
+              <input type="email" id="email" required />
+            </div>
+            <div class="input-group">
+              <label for="message">Address:</label>
+              <textarea id="message" required></textarea>
+            </div>
+            <div class="input-group">
+              <label for="phone">Phone:</label>
+              <input type="tel" id="phone" required />
+            </div>
+          </div>
+          <div id="additional-information">
+            <fieldset>
+              <div class="input-group">
+                <label for="no-of-pieces">Number of Pieces:</label>
+                <input type="number" id="no-of-pieces" required />
+              </div>
+              <div class="input-group" id="imageUpload-1">
+                <label for="imageUpload">Upload an Image:</label>
+                <input
+                  type="file"
+                  id="imageUpload"
+                  name="image"
+                  accept="image/*"
+                  required
+                />
+                <button type="button" id="add-image-button">
+                  Add Another Image
+                </button>
+              </div>
+              <div class="input-group">
+                <label for="due-date">
+                  Due Date of the Order
+                </label>
+                <input type="date" id="due-date" style="display: block;" required />
+              </div>
+            </fieldset>
+          </div>
+          <div id="form-buttons">
+            <input type="reset" value="Reset" class="reset" />
+            <input type="submit" value="Submit" class="submit" />
+          </div>
+        </form>
+      </fieldset>
+    </div>
+
+    <footer>
+      <div id="footer">
+        <div class="footer-container" id="site-navigation">
+          <h3>Site Navigation</h3>
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-container" id="social-media">
+          <h3>Follow Us</h3>
+          <ul>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">YouTube</a></li>
+            <li><a href="#">TikTok</a></li>
+          </ul>
+        </div>
+        <div class="footer-container" id="contact-us">
+          <h3>Contact Us</h3>
+          <ul>
+            <li>
+              Email:
+              <a href="mailto:thenukagurusinghe0@gmail.com"
+                >thenukagurusinghe0@gmail.com</a
+              >
+            </li>
+            <li>Tel: <a href="tel:+94756548744">+94 756548744</a></li>
+          </ul>
+        </div>
+        <div class="footer-container" id="visit-us">
+          <h3>Visit Us</h3>
+          <p>No. 130/1, Bothota, Medawala, Kandy, Sri Lanka</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

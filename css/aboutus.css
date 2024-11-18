@@ -4,12 +4,16 @@ body {
   padding: 0;
   width: 100%;
   height: 100%;
-  font-family: "Roboto", sans-serif;
   box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
 }
 
 * {
   box-sizing: border-box;
+}
+
+#main {
+  background-color: white;
 }
 
 header {
@@ -74,70 +78,88 @@ nav ul {
   margin: 1% 0;
   padding: 0;
 }
-#main-container {
-  padding: 1% 5%;
+#slideshow-container {
+  position: relative;
+  margin: 1% 0 0 1.5%;
+  width: 97vw;
+  height: 80vh;
+  box-shadow: -15px -10px 3px rgba(200, 161, 101, 0.3);
+  overflow: hidden;
 }
-.bottom-fieldset, .tshirt-fieldset {
-  display: flex;
-  width: 90%;
-  height: 50vh;
-  margin: 20px auto;
+#slideshow-container img {
+  width: 100%;
+  height: 100%;
+  opacity: 0.4;
+  object-fit: cover;
+}
+#company-description {
+  position: absolute;
+  top: 45%;
+  left: 37%;
+  width: 69%;
+  height: 95%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #ffffff;
+  /* background-color: rgba(0, 0, 0, 0.5); */
   padding: 20px;
-  border: 2px solid #dba84c;
   border-radius: 10px;
-  box-shadow: 20px 20px 2px rgba(128, 128, 128, 0.2);
-  box-sizing: border-box;
-  overflow-y: hidden;
 }
-
-#tshirt-container, #bottoms-shorts-container {
+#company-description h1 {
+  width: 10%;
+  margin-left: 0;
+  
+}
+#company-description .word-highlight {
+  margin-left: 55%;
+}
+#company-description p {
+    color: #212e0c;
+    margin-top: 5%;
+    text-align: justify;
+}
+#company-director {
+  width: 100vw;
+  height: 100vh;
   display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
+  flex-direction: column;
+}
+#directors {
   width: 90%;
   margin-left: 5%;
-  padding: 0 5%;
 }
-legend {
-    font-size: 2rem;
-    color: #556b2f;
+#director-container {
+  display: flex;
+  flex-direction: row;
 }
-.heading{
-   color: #d4af37 ; 
-}
-#tshirt-container div:hover, #bottoms-shorts-container div:hover {
-  background-color: #e4d896; /* Slightly darker gold */
-  transform: scale(1.05);
-}
-#cooperate,
-#sportswear,
-#kids,
-#bottoms,
-#shorts {
+#director-image {
   flex: 1;
-  margin: 0 10px;
-  height: 90%;
-  text-align: center;
-  padding: 10px;
-  border: 2px solid #dba84c;
-  border-radius: 10px;
-  background-color: #f7ef99;
+  border: #c8a165;
+  overflow: hidden;
+  height: 63vh;
+  box-shadow: 20px -10px 2px rgba(200, 161, 101, 0.3);
 }
-#cooperate-sub,
-#sportswear-sub,
-#kids-sub,
-#bottoms-sub,
-#shorts-sub {
-  margin: 0 10px;
-  margin-left: 15%;
-  height: 70%;
-  width: 70%;
-  text-align: center;
-  padding: 10px;
-  border: 2px solid #383e43;
-  border-radius: 10px;
-  background-color: aqua;
+#director-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#director-description {
+  flex: 2;
+  border: #c8a165;
+  margin-left: 3%;
+}
+#director-description{
+    text-align: justify;
+}
+.word-highlight {
+  margin-left: 3%;
+}
+h1 {
+  font-size: 50px;
+  font-family: "Playfair Display", serif;
+  color: #556b2f;
+  margin-left: 5%;
 }
 
 #footer {
@@ -199,37 +221,14 @@ legend {
 #footer p a:hover {
   color: #f5c97c; /* Bright gold hover */
 }
-@media (max-width: 1024px) {
-  header {
-    flex-direction: column;
-    height: auto;
-  }
-
-  nav ul {
-    flex-direction: column;
-  }
-
-  nav ul li {
-    margin: 10px 0;
-  }
-
-  .footer-container {
-    flex: 1 1 100%;
-    text-align: center;
-  }
-
-  #tshirt-container div {
-    flex: 1 1 45%;
-  }
-}
 
 @media (max-width: 768px) {
-  #tshirt-container div {
-    flex: 1 1 100%;
-  }
-
   #footer {
     flex-direction: column;
     align-items: center;
+  }
+  .footer-container {
+    flex: 1 1 100%;
+    text-align: center;
   }
 }
